@@ -1,0 +1,52 @@
+Greetings Sir/Madam:
+ The project is done such a way that Lab sessions are assigned first:
+ 
+First set of inputs will 
+Semester(1-8)   (Enter semester in integer from 1-8)  eg 1
+Section(A/B)   (Enter section in Upper case)eg: A
+
+
+then please enter The day on which you wish to schedule your lab class(twice)
+Monday or Tuesday or Wednesday or Thursday or Friday (First letter alone in Upper case)
+eg:
+Monday
+Wednesday
+
+the above loop will run for 16 times, so as to cover all 8 semesters and 2 sections
+
+
+
+after the above loop,
+please enter the total number of faculties you wish to schedule across all sem(in integer)  eg 10
+then please enter the unique name of the faculty (in string)     eg: John
+please enter the total number of subject handled by that faculty across dept(in integer): eg 3
+	enter the sem name (in integer) eg  1
+	enter section       (in upper case)   A
+	enter the subject handled by that faculty for that sem and sec i.e 1A which is Sem1 sec A: eg Maths
+	Hence John takes Maths for Sem1 sec A
+	this inner loop runs for (total number of subject of indidual faculty)times
+	Kindle ensure that each time you enter a subject for a faculty, please ensure that
+	 *they are not in the same index of the priority list of the subjects which is mentioned in the top of code*
+	eg :
+		If Ramesh Takes 2 Classes
+			i,e Sem 2 Asec and Sem 5 B sec:
+				The priority order of the subject is  [7 hours,7 hours,6 hours,6 hours,6 hours]
+					for sem2 secA  :			  ["C","Data Science","Maths","HSE","BEEE"]
+					for sem5 secb :                 ["M.I","Computer Networks","ToC","Crypto","A.I"]
+					
+					hence C,Data Science,M.I, Computer Networks are all 7 hour subject per week for the student and rest are 6hr
+						
+					while choosing -the subject ensure they are not in same index and has same subject hour across all their subject handled
+					i;e eg if Maths is chosen for Ramesh to handle Sem2 Sec A, then avoid "ToC" for Ramesh in Sem5 SecB and choose from "Crypto" and "A.I"
+								Maintain this priority order for all faculties while giving their subject 
+					ensure that the maximum number of class handled by the faculty is 3 if he is teaching 6hr subject else 2 for 7 hr subject
+Thank you!
+
+
+Team members are 
+ 
+
+
+Rakshith Subramanian 3122 21 5001 078
+Prajit R 		   3122 21 5001 068
+RohitRam     	   3122 21 5001 086
